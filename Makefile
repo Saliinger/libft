@@ -13,12 +13,12 @@ libft:
 printf:
 	@echo "Compiling in printf"
 	@$(MAKE) -C ./printf
-	@mv ./printf/printf.a compiled/
+	@mv ./printf/libprintf.a compiled/
 
 GNL:
 	@echo "Compiling in GNL"
 	@$(MAKE) -C ./gnl
-	@mv ./gnl/gnl.a compiled/
+	@mv ./gnl/libgnl.a compiled/
 
 
 clean:

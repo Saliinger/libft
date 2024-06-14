@@ -12,7 +12,7 @@
 
 CC = gcc
 CFLAGS = -Wall -Wextra -Werror
-NAME = printf.a
+NAME = libprintf.a
 
 INCDIR = includes
 
