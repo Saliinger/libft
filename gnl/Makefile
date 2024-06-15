@@ -5,34 +5,27 @@
 #                                                     +:+ +:+         +:+      #
 #    By: anoukan <anoukan@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2023/11/07 11:38:23 by anoukan           #+#    #+#              #
-#    Updated: 2024/06/15 18:30:30 by anoukan          ###   ########.fr        #
+#    Created: 2024/01/22 17:10:26 by anoukan           #+#    #+#              #
+#    Updated: 2024/06/15 18:30:14 by anoukan          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 CC = cc
 CFLAGS = -Wall -Wextra -Werror
-NAME = libprintf.a
+NAME = libgnl.a
 
 INCDIR = includes
 
-# Printf
-PTF_SRCS =		ft_countdigit.c \
-				ft_decimal.c\
-				ft_hex.c \
-				ft_pointeurhex.c \
-				ft_printchar.c\
-				ft_printf.c \
-				ft_putnbr_u.c \
-				ft_putstr.c\
-				ft_selector.c\
-				ft_string.c\
-				ft_uint.c
+SRC =		get_next_line.c\
+			get_next_line_utils.c
 
-PTF_OBJ = $(PTF_SRCS:%.c=%.o)
+BONUS =		get_next_line_bonus.c\
+			get_next_line_utils_bonus.c
 
-# Makefile Command
-OBJ = $(PTF_OBJ)
+OBJ = $(SRC:.c=.o)
+
+OBJ_BONUS = $(BONUS:.c=.o)
+
 INC = -I$(INCDIR)
 
 .PHONY: all clean fclean re
@@ -42,14 +35,17 @@ all: $(NAME)
 $(NAME): $(OBJ)
 	ar rc $(NAME) $(OBJ)
 
-$(PTF_OBJ): %.o: %.c
+bonus: $(BONUS) $(OBJ_BONUS)
+	ar rc $(NAME) $(OBJ_BONUS)
+
+
+$(OBJ): %.o: %.c
 	$(CC) $(CFLAGS) $(INC) -c $< -o $@
 
 clean:
-	rm -f $(OBJ)
+	rm -f $(OBJ) $(OBJ_BONUS)
 
 fclean: clean
 	rm -f $(NAME)
 
 re: fclean all
-
