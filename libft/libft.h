@@ -6,7 +6,7 @@
 /*   By: anoukan <anoukan@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/20 09:50:46 by anoukan           #+#    #+#             */
-/*   Updated: 2024/06/15 18:40:41 by anoukan          ###   ########.fr       */
+/*   Updated: 2024/07/23 22:32:48 by anoukan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,7 +75,7 @@ void				ft_lstiter(t_list *lst, void (*f)(void *));
 t_list				*ft_lstmap(t_list *lst, void *(*f)(void *),
 						void (*del)(void *));
 
-//Custom
-char                *ft_strjoin_frees1(char *s1, char *s2);
+// Custom
+char				*ft_strjoin_frees1(char *s1, char *s2);
 
 #endif
