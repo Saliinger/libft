@@ -20,17 +20,17 @@ create_dir:
 libft:
 	@echo "Compiling in libft"
 	@$(MAKE) -C ./libft
-	@mv ./libft/libft.a compiled/
+	@cp ./libft/libft.a compiled/
 
 printf:
 	@echo "Compiling in printf"
 	@$(MAKE) -C ./printf
-	@mv ./printf/libprintf.a compiled/
+	@cp ./printf/libprintf.a compiled/
 
 GNL:
 	@echo "Compiling in GNL"
 	@$(MAKE) -C ./gnl
-	@mv ./gnl/libgnl.a compiled/
+	@cp ./gnl/libgnl.a compiled/
 
 
 clean:
