@@ -11,7 +11,8 @@
 # **************************************************************************** #
 
 CC = cc
-CFLAGS = -Wall -Wextra -Werror -g3 #-fsanitize=address
+CFLAGS = -Wall -Wextra -Werror -g3 #-fsanitize=addresrs
+LIBS = -L../compiled -lft
 NAME = libprintf.a
 
 INCDIR = includes
@@ -27,7 +28,8 @@ PTF_SRCS =		ft_countdigit.c \
 				ft_putstr.c\
 				ft_selector.c\
 				ft_string.c\
-				ft_uint.c
+				ft_uint.c \
+				utils.c
 
 PTF_OBJ = $(PTF_SRCS:%.c=%.o)
 

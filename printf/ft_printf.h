@@ -13,9 +13,9 @@
 #ifndef FT_PRINTF_H
 # define FT_PRINTF_H
 
-# include "../libft/libft.h"
 # include <stdarg.h>
 # include <stdint.h>
+# include <unistd.h>
 
 int		ft_printf(const char *format, ...);
 
@@ -41,5 +41,10 @@ int		ft_hex(unsigned int nbr, const char c);
 int		ft_hexcount(unsigned int n);
 int		ft_pointertohex(unsigned long long ptr);
 int		ft_ptrlen(uintptr_t ptr);
+
+// Utils
+void	ft_putnbr_fd_printf(int nb, int fd);
+void	ft_putchar_fd_printf(char c, int fd)
+
 
 #endif
