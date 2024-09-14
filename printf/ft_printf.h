@@ -6,7 +6,7 @@
 /*   By: anoukan <anoukan@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 0003/11/20 13:05:09 by noukan            #+#    #+#             */
-/*   Updated: 2024/01/22 18:04:11 by anoukan          ###   ########.fr       */
+/*   Updated: 2024/09/14 14:20:43 by anoukan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ int		ft_ptrlen(uintptr_t ptr);
 
 // Utils
 void	ft_putnbr_fd_printf(int nb, int fd);
-void	ft_putchar_fd_printf(char c, int fd)
+void	ft_putchar_fd_printf(char c, int fd);
 
 
 #endif

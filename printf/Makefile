@@ -6,13 +6,12 @@
 #    By: anoukan <anoukan@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/07 11:38:23 by anoukan           #+#    #+#              #
-#    Updated: 2024/06/15 18:30:30 by anoukan          ###   ########.fr        #
+#    Updated: 2024/09/14 14:19:59 by anoukan          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 CC = cc
 CFLAGS = -Wall -Wextra -Werror -g3 #-fsanitize=addresrs
-LIBS = -L../compiled -lft
 NAME = libprintf.a
 
 INCDIR = includes
