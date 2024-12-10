@@ -76,5 +76,6 @@ t_list				*ft_lstmap(t_list *lst, void *(*f)(void *),
 
 // Custom
 char				*ft_strjoin_frees1(char *s1, char *s2);
+int ft_strcmp3(const char *s1, const char *s2);
 
 #endif
