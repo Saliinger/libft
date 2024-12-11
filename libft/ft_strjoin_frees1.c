@@ -6,25 +6,11 @@
 /*   By: anoukan <anoukan@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/11 14:09:47 by anoukan           #+#    #+#             */
-/*   Updated: 2024/10/22 10:35:45 by anoukan          ###   ########.fr       */
+/*   Updated: 2024/12/11 16:09:59 by anoukan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-static char	*ft_strcpy(char *dest, char *src)
-{
-	int	i;
-
-	i = 0;
-	while (src[i] != '\0')
-	{
-		dest[i] = src[i];
-		++i;
-	}
-	dest[i] = '\0';
-	return (dest);
-}
 
 char	*ft_strjoin_frees1(char *s1, char *s2)
 {
