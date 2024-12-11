@@ -6,7 +6,7 @@
 #    By: anoukan <anoukan@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/19 12:59:54 by anoukan           #+#    #+#              #
-#    Updated: 2024/12/10 10:50:40 by anoukan          ###   ########.fr        #
+#    Updated: 2024/12/11 12:00:42 by anoukan          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -51,7 +51,9 @@ SRC =   ft_isalpha.c\
 		ft_putendl_fd.c\
 		ft_putnbr_fd.c\
 		ft_strjoin_frees1.c\
-		ft_strcmp.c
+		ft_strcmp.c\
+		ft_strcat.c\
+		ft_strcpy.c
 
 BONUS = ft_lstnew_bonus.c\
 		ft_lstadd_front_bonus.c\
