@@ -6,7 +6,7 @@
 /*   By: anoukan <anoukan@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/20 09:50:46 by anoukan           #+#    #+#             */
-/*   Updated: 2024/12/10 12:13:48 by anoukan          ###   ########.fr       */
+/*   Updated: 2024/12/11 12:02:19 by anoukan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,5 +77,7 @@ t_list				*ft_lstmap(t_list *lst, void *(*f)(void *),
 // Custom
 char				*ft_strjoin_frees1(char *s1, char *s2);
 int					ft_strcmp(const char *s1, const char *s2);
+char				*ft_strcat(char *dst, const char *src);
+char				*ft_strcpy(char *dst, const char *src);
 
 #endif
