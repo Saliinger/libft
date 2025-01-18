@@ -79,5 +79,6 @@ char				*ft_strjoin_frees1(char *s1, char *s2);
 int					ft_strcmp(const char *s1, const char *s2);
 char				*ft_strcat(char *dst, const char *src);
 char				*ft_strcpy(char *dst, const char *src);
+char				*ft_strndup(const char *s, size_t n);
 
 #endif
