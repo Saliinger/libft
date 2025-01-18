@@ -53,7 +53,8 @@ SRC =   ft_isalpha.c\
 		ft_strjoin_frees1.c\
 		ft_strcmp.c\
 		ft_strcat.c\
-		ft_strcpy.c
+		ft_strcpy.c \
+		ft_strndup.c
 
 BONUS = ft_lstnew_bonus.c\
 		ft_lstadd_front_bonus.c\
